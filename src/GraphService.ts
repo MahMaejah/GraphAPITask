@@ -32,11 +32,11 @@ export async function getUser(authProvider: AuthCodeMSALBrowserAuthenticationPro
   ensureClient(authProvider);
 
   // Return the /me API endpoint result as a User object
-  const user: User = await graphClient!.api('/me/messages')
+  const user: User = await graphClient!.api('/me/mailFolders/Inbox/messages/delta')
     // Only retrieve the specific fields needed
     //.select('displayName,mail,mailboxSettings,userPrincipalName')
     .get();
-    console.log("Logged in user: " + user.displayName)
+    console.log("Logged in user: " + user.value[0].subject)
 
   return user;
 }
