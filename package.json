@@ -16,6 +16,7 @@
     "bootstrap": "5.0.1",
     "date-fns": "2.22.1",
     "date-fns-tz": "1.1.4",
+    "jquery": "^3.6.0",
     "react": "^17.0.2",
     "react-bootstrap": "2.0.0-beta.4",
     "react-dom": "^17.0.2",
@@ -50,6 +51,7 @@
     ]
   },
   "devDependencies": {
+    "@types/jquery": "^3.5.14",
     "@types/microsoft-graph": "^2.13.0",
     "@types/react-router-dom": "5.1.8"
   }

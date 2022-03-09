@@ -30,18 +30,13 @@ export default function NavBar() {
   return (
       <Navbar bg="dark" variant="dark" expand="md" fixed="top">
         <Container>
-          <Navbar.Brand href="/">React Graph Tutorial</Navbar.Brand>
+          <Navbar.Brand href="/">Interview Challenge Submission</Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse>
             <Nav className="me-auto" navbar>
               <NavItem>
                 <RouterNavLink to="/" className="nav-link" exact>Home</RouterNavLink>
               </NavItem>
-              <AuthenticatedTemplate>
-                <NavItem>
-                  <RouterNavLink to="/calendar" className="nav-link" exact>Calendar</RouterNavLink>
-                </NavItem>
-              </AuthenticatedTemplate>
             </Nav>
             <Nav className="ms-auto align-items-center" navbar>
               <NavItem>

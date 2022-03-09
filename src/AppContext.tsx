@@ -126,6 +126,7 @@ import React, {
           timeFormat: user.mailboxSettings?.timeFormat || '',
           timeZone: user.mailboxSettings?.timeZone || 'UTC'
         });
+        window.location.reload();
       };
   
       const signOut = async () => {

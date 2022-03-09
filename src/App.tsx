@@ -8,14 +8,13 @@ import ErrorMessage from './ErrorMessage';
 import NavBar from './NavBar';
 import Welcome from './Welcome';
 import 'bootstrap/dist/css/bootstrap.css';
-import Calendar from './Calendar';
-import NewEvent from './NewEvent';
 
 type AppProps= {
   pca: IPublicClientApplication
 };
 
 export default function App({ pca }: AppProps) {
+  
   return(
     <MsalProvider instance={ pca }>
       <ProvideAppContext>
@@ -27,16 +26,6 @@ export default function App({ pca }: AppProps) {
               <Route exact path="/"
                 render={(props) =>
                   <Welcome {...props} />
-                } />
-
-                <Route exact path="/calendar"
-                render={(props) =>
-                  <Calendar {...props} />
-                } />
-
-              <Route exact path="/newevent"
-                render={(props) =>
-                  <NewEvent {...props} /> 
                 } />
             </Container>
           </div>

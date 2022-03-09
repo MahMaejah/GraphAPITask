@@ -1,0 +1,9 @@
+.mail {
+    background-color: #e4ecff;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 5px !important;
+}
+
+.mail:hover {
+    cursor: pointer;
+}
